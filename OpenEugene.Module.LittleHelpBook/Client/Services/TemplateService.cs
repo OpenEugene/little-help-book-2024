@@ -8,11 +8,11 @@ using Oqtane.Shared;
 
 namespace OpenEugene.Module.LittleHelpBook.Services
 {
-    public class LittleHelpBookService : ServiceBase, ILittleHelpBookService, IService
+    public class TemplateService : ServiceBase, ILittleHelpBookService, IService
     {
-        public LittleHelpBookService(IHttpClientFactory http, SiteState siteState) : base(http, siteState) { }
+        public TemplateService(IHttpClientFactory http, SiteState siteState) : base(http, siteState) { }
 
-        private string Apiurl => CreateApiUrl("LittleHelpBook");
+        private string Apiurl => CreateApiUrl("Template");
 
         public async Task<List<Models.LittleHelpBook>> GetLittleHelpBooksAsync(int ModuleId)
         {

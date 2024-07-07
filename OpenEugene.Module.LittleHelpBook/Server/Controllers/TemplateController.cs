@@ -12,11 +12,11 @@ using System.Net;
 namespace OpenEugene.Module.LittleHelpBook.Controllers
 {
     [Route(ControllerRoutes.ApiRoute)]
-    public class LittleHelpBookController : ModuleControllerBase
+    public class TemplateController : ModuleControllerBase
     {
         private readonly ILittleHelpBookRepository _LittleHelpBookRepository;
 
-        public LittleHelpBookController(ILittleHelpBookRepository LittleHelpBookRepository, ILogManager logger, IHttpContextAccessor accessor) : base(logger, accessor)
+        public TemplateController(ILittleHelpBookRepository LittleHelpBookRepository, ILogManager logger, IHttpContextAccessor accessor) : base(logger, accessor)
         {
             _LittleHelpBookRepository = LittleHelpBookRepository;
         }
