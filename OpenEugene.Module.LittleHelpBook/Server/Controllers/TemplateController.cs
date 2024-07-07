@@ -14,9 +14,9 @@ namespace OpenEugene.Module.LittleHelpBook.Controllers
     [Route(ControllerRoutes.ApiRoute)]
     public class TemplateController : ModuleControllerBase
     {
-        private readonly ILittleHelpBookRepository _LittleHelpBookRepository;
+        private readonly LittleHelpBookRepository _LittleHelpBookRepository;
 
-        public TemplateController(ILittleHelpBookRepository LittleHelpBookRepository, ILogManager logger, IHttpContextAccessor accessor) : base(logger, accessor)
+        public TemplateController(LittleHelpBookRepository LittleHelpBookRepository, ILogManager logger, IHttpContextAccessor accessor) : base(logger, accessor)
         {
             _LittleHelpBookRepository = LittleHelpBookRepository;
         }

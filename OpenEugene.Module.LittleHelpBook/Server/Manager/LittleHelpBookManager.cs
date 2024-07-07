@@ -12,10 +12,10 @@ namespace OpenEugene.Module.LittleHelpBook.Manager
 {
     public class LittleHelpBookManager : MigratableModuleBase, IInstallable, IPortable
     {
-        private readonly ILittleHelpBookRepository _LittleHelpBookRepository;
+        private readonly LittleHelpBookRepository _LittleHelpBookRepository;
         private readonly IDBContextDependencies _DBContextDependencies;
 
-        public LittleHelpBookManager(ILittleHelpBookRepository LittleHelpBookRepository, IDBContextDependencies DBContextDependencies)
+        public LittleHelpBookManager(LittleHelpBookRepository LittleHelpBookRepository, IDBContextDependencies DBContextDependencies)
         {
             _LittleHelpBookRepository = LittleHelpBookRepository;
             _DBContextDependencies = DBContextDependencies;
